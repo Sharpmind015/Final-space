@@ -14,24 +14,28 @@ export default {
   name: 'Characters',
   data() {
     return {
-      characters: [
-        {
-          name: 'Gary goodspeed',
-          status: 'Alive',
-          origin: 'Earth',
-          image: 'wallpaper.jpg'
-        },
-        {
-          name: 'Quinn ergon',
-          status: 'Alive',
-          origin: 'Earth',
-          image: 'wallpaper.jpg'
-        }
-      ]
+      characters: []
     }
   },
   components: {
     Card
+  },
+  created() {
+    fetch('https://finalspaceapi.com/api/v0/character/').
+      then(res => res.json()).
+      then(res => {
+
+        const mappedRes = res.map(({ name, status, img_url, origin }) => {
+          return {
+            name,
+            status,
+            origin,
+            image: img_url
+          }
+        });
+        this.characters = mappedRes;
+
+      }).catch(err => { console.log(err) })
   }
 }
 </script>

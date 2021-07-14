@@ -14,22 +14,27 @@ export default {
   name: 'Locations',
   data() {
     return {
-      locations: [
-        {
-          name: 'Earth',
-          type: 'Planet',
-          image: 'wallpaper.jpg'
-        },
-        {
-          name: 'Quinn ergon',
-          type: 'Alive',
-          image: 'wallpaper.jpg'
-        }
-      ]
+      locations: []
     }
   },
   components: {
     Card
+  },
+  created() {
+    fetch('https://finalspaceapi.com/api/v0/location/').
+      then(res => res.json()).
+      then(res => {
+
+        const mappedRes = res.map(({ name, type, img_url }) => {
+          return {
+            name,
+            type,
+            image: img_url
+          }
+        });
+        this.locations = mappedRes;
+
+      }).catch(err => { console.log(err) })
   }
 }
 </script>
