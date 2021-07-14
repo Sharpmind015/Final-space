@@ -18,12 +18,12 @@ export default {
         {
           alt: '',
           image: 'wallpaper.jpg',
-          title: 'Locations'
+          title: 'locations'
         },
         {
           alt: '',
           image: 'wallpaper.jpg',
-          title: 'Characters'
+          title: 'characters'
         }
       ]
     }
