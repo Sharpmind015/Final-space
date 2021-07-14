@@ -4,6 +4,7 @@
     <div class="card__content">
       <h5 class="card__title">{{name}}</h5>
       <p class="card__status">{{status}}</p>
+      <p class="card__status">{{type}}</p>
       <p class="card__origin">{{origin}}</p>
     </div>
   </div>
@@ -13,7 +14,7 @@
 <script>
 export default {
   name: 'Card',
-  props: ['status', 'image', 'name', 'origin']
+  props: ['status', 'image', 'name', 'origin', 'type']
 }
 </script>
 
