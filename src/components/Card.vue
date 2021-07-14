@@ -28,6 +28,7 @@ export default {
   border-radius: 25px;
   color: #333;
   transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin-top: 2rem;
 }
 
 .card:hover {

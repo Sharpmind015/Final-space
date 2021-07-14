@@ -26,7 +26,7 @@ export default {
           status: 'Alive',
           origin: 'Earth',
           image: 'wallpaper.jpg'
-        },
+        }
       ]
     }
   },
@@ -56,6 +56,7 @@ export default {
 .characters__cards {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 4rem;
 }
 
@@ -66,7 +67,7 @@ export default {
     align-items: center;
   }
   .characters__heading {
-    font-size: 4.2rem;
+    font-size: 4.5rem;
   }
 }
 
