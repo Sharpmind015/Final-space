@@ -44,4 +44,19 @@ export default {
   padding-left: 2rem;
   transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
+@media screen and (max-width: 768px) {
+  .section-card {
+    margin-top: 3rem;
+  }
+  .section-card__img {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .section-card__img {
+    width: 80px;
+  }
+}
 </style>

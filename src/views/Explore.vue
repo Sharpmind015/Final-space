@@ -58,4 +58,22 @@ export default {
   justify-content: space-around;
   margin-top: 4rem;
 }
+
+@media screen and (max-width: 768px) {
+  .explore__sections {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .explore__heading {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .explore__heading {
+    font-size: 4rem;
+  }
+}
 </style>
