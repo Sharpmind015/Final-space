@@ -61,10 +61,12 @@ export default {
 
 @media screen and (max-width: 768px) {
   .characters__cards {
-    display: block;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
   .characters__heading {
-    font-size: 4.5rem;
+    font-size: 4.2rem;
   }
 }
 

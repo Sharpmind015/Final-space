@@ -42,7 +42,7 @@ export default {
 }
 
 .card__content {
-  padding: 0.5rem 0.5rem 0 1.9rem;
+  padding: 0.5rem 0.5rem 1rem 1.9rem;
 }
 
 .card__content p,
@@ -52,5 +52,30 @@ export default {
 
 .card__title {
   font-size: 1.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    margin-top: 3rem;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .card {
+    width: 150px;
+  }
 }
 </style>
