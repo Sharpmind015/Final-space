@@ -58,8 +58,8 @@ export default {
 
 .hero__img {
   object-fit: cover;
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
 }
 
@@ -72,12 +72,78 @@ export default {
 }
 
 .hero__heading {
-  font-size: 7.5rem;
+  font-size: 11rem;
 
   line-height: 1;
 }
 
 .line-2 {
   margin-left: 1.5rem;
+}
+
+.hero__tagline {
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero__buttons {
+  /*margin-top: 2rem;*/
+}
+
+.hero__button {
+  position: relative;
+  color: #fff;
+  font-size: 1.7rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #277c99;
+  color: #277c99;
+  overflow-x: hidden;
+  transition: color 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 0;
+}
+
+.hero__button:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: unset;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #277c99;
+  z-index: -1;
+  transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.hero__button:hover {
+  color: #fff;
+}
+
+.hero__button:hover:before {
+  width: 100%;
+  right: 0;
+  left: unset;
+}
+
+.hero__button:nth-child(2) {
+  margin-left: 1.2rem;
+}
+
+
+
+/*Media queries*/
+
+@media screen and (max-width: 768px) {
+  .hero__showcase {
+    display: none;
+  }
+  .hero {
+    justify-content: center;
+  }
+  .hero__content {
+    flex: 0 0 90%;
+    text-align: center;
+  }
 }
 </style>
