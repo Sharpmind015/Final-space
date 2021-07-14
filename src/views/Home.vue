@@ -31,8 +31,32 @@ export default {
 
 <style scoped>
 .home {
-  background-image: url('../assets/space.jpg');
-  background-size: cover;
-  background-position: center;
+  min-height: 90vh;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+}
+
+.hero__showcase {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero__showcase,
+.hero__content {
+  flex: 0 0 45%;
+}
+
+.hero__img {
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
 }
 </style>
