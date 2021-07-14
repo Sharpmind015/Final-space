@@ -5,17 +5,17 @@
     </router-link>
     <ul class="nav__menu">
       <li class="nav__item">
-        <router-link class="nav__link">
+        <router-link to="/" class="nav__link">
           home
         </router-link>
       </li>
       <li class="nav__item">
-        <router-link class="nav__link">
+        <router-link to="/" class="nav__link">
           explore
         </router-link>
       </li>
       <li class="nav__item">
-        <router-link class="nav__link">
+        <router-link to="/" class="nav__link">
           favourites
         </router-link>
       </li>
@@ -50,5 +50,6 @@ export default {
 .nav__link {
   font-size: 1.6rem;
   padding: 0 0.75rem;
+  color: #333333;
 }
 </style>
