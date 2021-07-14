@@ -5,17 +5,17 @@
     </router-link>
     <ul class="nav__menu">
       <li class="nav__item">
-        <router-link to="/" class="nav__link">
+        <router-link data-text="home" to="/" class="nav__link">
           home
         </router-link>
       </li>
       <li class="nav__item">
-        <router-link to="/" class="nav__link">
+        <router-link data-text="explore" to="/" class="nav__link">
           explore
         </router-link>
       </li>
       <li class="nav__item">
-        <router-link to="/" class="nav__link">
+        <router-link data-text="favourites" to="/" class="nav__link">
           favourites
         </router-link>
       </li>
@@ -48,10 +48,20 @@ export default {
   justify-content: space-between;
 }
 
-.nav__link {
-  font-size: 1.6rem;
+.nav__item {
   padding: 0 0.75rem;
+}
+
+.nav__link {
+  position: relative;
+  font-size: 1.6rem;
   color: #e5e5e5;
+  transition: color 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+.nav__link:hover {
+  color: #277c99;
 }
 
 @media screen and (max-width: 768px) {
