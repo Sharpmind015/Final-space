@@ -35,6 +35,7 @@ export default {
   padding: 2rem 3rem;
   display: flex;
   justify-content: space-between;
+  height: 10vh;
 }
 
 .nav__logo {
