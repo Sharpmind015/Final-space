@@ -2,6 +2,7 @@
   <main class="locations">
     <h1 class="locations__heading">
       <span>/</span> Locations</h1>
+    <Loader v-if="isLoading" />
     <section class="locations__cards">
       <Card v-for="(location, index) in locations" :key="index" :type="location.type" :name="location.name" :image="location.image" />
     </section>
@@ -10,15 +11,18 @@
 
 <script>
 import Card from '@/components/Card';
+import Loader from '@/components/Loader';
 export default {
   name: 'Locations',
   data() {
     return {
-      locations: []
+      locations: [],
+      isLoading: true
     }
   },
   components: {
-    Card
+    Card,
+    Loader
   },
   created() {
     fetch('https://finalspaceapi.com/api/v0/location/').
