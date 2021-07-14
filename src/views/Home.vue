@@ -2,10 +2,12 @@
   <main class="home">
     <section class="hero">
       <div class="hero__content">
-        <h1 class="hero__heading">
-          <div class="line-1">Final</div>
-          <div class="line-2">Space</div>
-        </h1>
+        <div class="heading-image">
+          <h1 class="hero__heading">
+            <div class="line-1">Final</div>
+            <div class="line-2">Space</div>
+          </h1>
+        </div>
         <p class="hero__tagline">Chookity pok pok pok</p>
         <div class="hero__buttons">
           <router-link to="/" class="hero__button">Explore</router-link>
@@ -39,7 +41,8 @@ export default {
   justify-content: space-around;
   align-items: center;
   width: 100vw;
-  height: 100%;
+  min-height: 90vh;
+  padding: 2rem 1.4rem;
 }
 
 .hero__showcase {
@@ -58,5 +61,23 @@ export default {
   width: 300px;
   height: 300px;
   border-radius: 50%;
+}
+
+.heading-image {
+  background-image: url('../assets/space.jpg');
+  background-size: contain;
+  background-clip: text;
+  color: transparent;
+  --webkit-text-fill-color: transparent;
+}
+
+.hero__heading {
+  font-size: 7.5rem;
+
+  line-height: 1;
+}
+
+.line-2 {
+  margin-left: 1.5rem;
 }
 </style>

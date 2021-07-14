@@ -51,6 +51,6 @@ export default {
 .nav__link {
   font-size: 1.6rem;
   padding: 0 0.75rem;
-  color: #333333;
+  color: #e5e5e5;
 }
 </style>
