@@ -1,10 +1,16 @@
 <template>
   <div class="loader">
-    <svg width="210" height="210">
-      <circle cx="105" cy="105" stroke-width="60" stroke="#277c99" fill="transparent"></circle>
+    <svg width="110" height="110">
+      <circle cx="55" cy="55" r="50" stroke-width="10" stroke="#277c99" fill="transparent"></circle>
     </svg>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'Loader'
+}
+</script>
 
 
 <style scoped>
@@ -17,18 +23,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #121212;
 }
 
 .loader circle {
-  stroke-dasharray: 628.319;
-  stroke-dashoffset: 628.319;
-  animation: circle .6s cubic-bezier(0.075, 0.82, 0.165, 1) 0s 1 infinite alternate running;
-  /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+  stroke-dasharray: 314.159;
+  stroke-dashoffset: 314.159;
+  /*animation: circle .6s cubic-bezier(0.075, 0.82, 0.165, 1) 0s 1 infinite alternate running;*/
+  /*animation: circle .8s cubic-bezier(0.075, 0.82, 0.165, 1) 0 infinite alternate forwards;*/
+  animation-name: circle;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 @keyframes circle {
   to {
-    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
   }
 }
 </style>

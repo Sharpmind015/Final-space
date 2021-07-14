@@ -2,6 +2,7 @@
   <main class="characters">
     <h1 class="characters__heading">
       <span>/</span> Characters</h1>
+    <Loader v-if="isLoading" />
     <section class="characters__cards">
       <Card v-for="(character, index) in characters" :key="index" :status="character.status" :name="character.name" :image="character.image" :origin="character.origin" />
     </section>
@@ -10,15 +11,18 @@
 
 <script>
 import Card from '@/components/Card';
+import Loader from '@/components/Loader';
 export default {
   name: 'Characters',
   data() {
     return {
-      characters: []
+      characters: [],
+      isLoading: true
     }
   },
   components: {
-    Card
+    Card,
+    Loader
   },
   created() {
     fetch('https://finalspaceapi.com/api/v0/character/').
@@ -34,6 +38,7 @@ export default {
           }
         });
         this.characters = mappedRes;
+        this.isLoading = false;
 
       }).catch(err => { console.log(err) })
   }
