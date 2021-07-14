@@ -53,4 +53,22 @@ export default {
   padding: 0 0.75rem;
   color: #e5e5e5;
 }
+
+@media screen and (max-width: 768px) {
+  .nav {
+    justify-content: center;
+  }
+  .nav__logo {
+    display: none;
+  }
+  .nav__menu {
+    flex: 0 0 90%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .nav__link {
+    font-size: 1.4rem;
+  }
+}
 </style>
