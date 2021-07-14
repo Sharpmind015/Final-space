@@ -10,7 +10,7 @@
         </router-link>
       </li>
       <li class="nav__item">
-        <router-link data-text="explore" to="/" class="nav__link">
+        <router-link data-text="explore" to="/explore" class="nav__link">
           explore
         </router-link>
       </li>
