@@ -16,13 +16,13 @@ export default {
     return {
       sections: [
         {
-          alt: '',
-          image: 'wallpaper.jpg',
+          alt: 'locations',
+          image: 'https://finalspaceapi.com/api/location/image/earth.jpg',
           title: 'locations'
         },
         {
-          alt: '',
-          image: 'wallpaper.jpg',
+          alt: 'locations',
+          image: 'https://finalspaceapi.com/api/character/avatar/gary_goodspeed.png',
           title: 'characters'
         }
       ]
