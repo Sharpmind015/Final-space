@@ -132,6 +132,7 @@ export default {
 
 
 
+
 /*Media queries*/
 
 @media screen and (max-width: 768px) {
@@ -144,6 +145,16 @@ export default {
   .hero__content {
     flex: 0 0 90%;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .hero__heading {
+    font-size: 6rem;
+  }
+  .hero__button {
+    font-size: 1.5rem;
+    display: inline-block;
   }
 }
 </style>
