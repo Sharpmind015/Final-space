@@ -1,7 +1,7 @@
 <template>
   <main class="location">
     <h1 class="location__heading">
-      <span>/</span> Explore</h1>
+      <span>/</span> Characters</h1>
     <section class="location__cards">
       <Card v-for="(character, index) in characters" :key="index" :status="character.status" :name="character.name" :image="character.image" :origin="character.origin" />
     </section>
@@ -59,6 +59,9 @@ export default {
 @media screen and (max-width: 768px) {
   .location__cards {
     display: block;
+  }
+  .location__heading {
+    font-size: 4.5rem;
   }
 }
 
