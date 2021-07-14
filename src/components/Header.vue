@@ -14,11 +14,6 @@
           explore
         </router-link>
       </li>
-      <li class="nav__item">
-        <router-link data-text="favourites" to="/" class="nav__link">
-          favourites
-        </router-link>
-      </li>
     </ul>
   </nav>
 </template>
@@ -39,11 +34,11 @@ export default {
 }
 
 .nav__logo {
-  flex: 0 0 20%;
+  flex: 0 0 40%;
 }
 
 .nav__menu {
-  flex: 0 0 75%;
+  flex: 0 0 45%;
   display: flex;
   justify-content: space-between;
 }
