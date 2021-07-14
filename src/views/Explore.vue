@@ -63,6 +63,9 @@ export default {
   .explore__sections {
     display: block;
   }
+  .explore__heading {
+    font-size: 4.5rem;
+  }
 }
 
 @media screen and (max-width: 340px) {

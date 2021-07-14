@@ -1,8 +1,8 @@
 <template>
-  <main class="location">
-    <h1 class="location__heading">
+  <main class="characters">
+    <h1 class="characters__heading">
       <span>/</span> Characters</h1>
-    <section class="location__cards">
+    <section class="characters__cards">
       <Card v-for="(character, index) in characters" :key="index" :status="character.status" :name="character.name" :image="character.image" :origin="character.origin" />
     </section>
   </main>
@@ -38,41 +38,44 @@ export default {
 
 
 <style scoped>
-.location {
+.characters {
   display: inline-block;
-  font-size: 6rem;
   font-weight: 500;
   margin-left: 4rem;
   padding: 2rem 0.5rem;
 }
 
-.location__heading span {
+.characters__heading {
+  font-size: 6rem;
+}
+
+.characters__heading span {
   color: #277c99;
 }
 
-.location__cards {
+.characters__cards {
   display: flex;
   justify-content: space-between;
   margin-top: 4rem;
 }
 
 @media screen and (max-width: 768px) {
-  .location__cards {
+  .characters__cards {
     display: block;
   }
-  .location__heading {
+  .characters__heading {
     font-size: 4.5rem;
   }
 }
 
 @media screen and (max-width: 340px) {
-  .location__heading {
+  .characters__heading {
     margin-left: 1rem;
   }
 }
 
 @media screen and (max-width: 300px) {
-  .location__heading {
+  .characters__heading {
     font-size: 4rem;
   }
 }
