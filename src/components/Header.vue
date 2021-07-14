@@ -1,7 +1,7 @@
 <template>
   <nav class="nav">
-    <router-link to="/">
-      <p class="nav__logo">Logo</p>
+    <router-link class="nav__logo" to="/">
+      <img src="@/assets/final-space.png" alt="">
     </router-link>
     <ul class="nav__menu">
       <li class="nav__item">
@@ -35,6 +35,10 @@ export default {
 
 .nav__logo {
   flex: 0 0 40%;
+}
+
+.nav__logo img {
+  width: 50px;
 }
 
 .nav__menu {
