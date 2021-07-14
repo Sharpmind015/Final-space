@@ -11,7 +11,6 @@
         <p class="hero__tagline">Chookity pok pok pok</p>
         <div class="hero__buttons">
           <router-link to="/explore" class="hero__button">Explore</router-link>
-          <router-link to="/" class="hero__button">Favourites</router-link>
         </div>
       </div>
       <div class="hero__showcase">
@@ -22,7 +21,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 
 export default {
   name: 'Home',
@@ -129,6 +127,8 @@ export default {
 .hero__button:nth-child(2) {
   margin-left: 1.2rem;
 }
+
+
 
 
 
