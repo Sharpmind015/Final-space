@@ -1,7 +1,7 @@
 <template>
   <div class="loader">
     <svg width="110" height="110">
-      <circle cx="55" cy="55" r="50" stroke-width="10" stroke="#277c99" fill="transparent"></circle>
+      <circle cx="55" cy="55" r="50" stroke-width="5" stroke="#277c99" fill="transparent"></circle>
     </svg>
   </div>
 </template>
