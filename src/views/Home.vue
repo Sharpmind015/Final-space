@@ -130,10 +130,6 @@ export default {
 
 
 
-
-
-
-
 /*Media queries*/
 
 @media screen and (max-width: 768px) {
