@@ -37,6 +37,7 @@ export default {
           }
         });
         this.locations = mappedRes;
+        this.isLoading = false;
 
       }).catch(err => { console.log(err) })
   }
